@@ -1,10 +1,11 @@
 const s = (p) => {
-  let demo7Shader, img, fft, audio, toggleBtn;
+  let demo2Shader, img, fft, audio, toggleBtn;
 
   p.preload = () => {
     audio = p.loadSound('audio/demo2.mp3')
-    demo7Shader = p.loadShader('shaders/base.vert', 'shaders/d2.frag')
+    demo2Shader = p.loadShader('shaders/base.vert', 'shaders/d3.frag')
     img = p.loadImage('img/7.jpg')
+    d_map         = p.loadImage('img/clouds.jpg')
   }
 
   p.setup = () => {
@@ -24,11 +25,12 @@ const s = (p) => {
       })
 
       fft = new p5.FFT()
-      p.shader(demo7Shader)
+      p.shader(demo2Shader)
 
-      demo7Shader.setUniform('u_resolution', [p.windowWidth, p.windowHeight])
-      demo7Shader.setUniform('u_texture', img)
-      demo7Shader.setUniform('u_tResolution', [img.width, img.height])
+      demo2Shader.setUniform('u_resolution', [p.windowWidth, p.windowHeight])
+      demo2Shader.setUniform('u_texture', img)
+      demo2Shader.setUniform('d_map', d_map)
+      demo2Shader.setUniform('u_tResolution', [img.width, img.height])
   }
 
   p.draw = () => {
@@ -42,16 +44,16 @@ const s = (p) => {
     const mapTremble = p.map(treble, 0, 255, 10.0, 10.0)
     const mapMid = p.map(mid, 0, 255, 0.0, 0.05)
 
-    demo7Shader.setUniform('u_time', p.frameCount / 20.0)
-    demo7Shader.setUniform('u_bass', mapBass)
-    demo7Shader.setUniform('u_mid', mapMid)
+    demo2Shader.setUniform('u_time', p.frameCount / 20.0)
+    demo2Shader.setUniform('u_bass', mapBass)
+    demo2Shader.setUniform('u_mid', mapMid)
 
     p.rect(0,0, p.width, p.height)
   }
 
   p.windowResized = () => {
     p.resizeCanvas(p.windowWidth, p.windowHeight)
-    demo7Shader.setUniform('u_resolution', [p.windowWidth, p.windowHeight])
+    demo2Shader.setUniform('u_resolution', [p.windowWidth, p.windowHeight])
   }
 
   toggleAudio = () => {
