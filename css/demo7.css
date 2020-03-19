@@ -1,5 +1,5 @@
 body {
-    font-family: gill-sans-nova, sans-serif;
+    font-family: JetBrainsMono-Regular, sans-serif;
     background-image: url(../img/7.jpg);
     font-weight: 500;
     font-size: 0.85rem;
@@ -11,7 +11,7 @@ body {
 }
 
 .content__title {
-    font-family: "LexendDeca-Regular";
+    font-family: LexendDeca-Regular;
     font-size: 8vw;
     font-weight: 900;
 }
