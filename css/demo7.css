@@ -11,10 +11,28 @@ body {
 }
 
 .content__title {
+    font-family: "LexendDeca-Regular";
     font-size: 8vw;
     font-weight: 900;
 }
 
 .content__credits {
+    font-family: JetBrainsMono-Regular;
     color: var(--color-link);
 }
+@font-face {
+    font-family: 'LexendDeca-Regular';
+    src: url('../fonts/LexendDeca-Regular.ttf') format('truetype'),
+    url('../fonts/LexendDeca-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrainsMono-Regular';
+    src: url('../fonts/JetBrainsMono-Regular.woff') format('woff'),
+    url('../fonts/JetBrainsMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
