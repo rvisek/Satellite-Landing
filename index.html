@@ -3,15 +3,36 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Audio-based Image Distortion | Demo 1 | Codrops</title>
-		<meta name="description" content="A set of experimental audio-based image distortion effects made with WebGL" />
+		<title>Satellite | Alpha</title>
+		<meta name="description" content="A fresh take on social media" />
 		<meta name="keywords" content="audio, distortion, image, webgl, music, visualizer, javascript, creative, web, demo" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
+		<meta name="author" content="Satellite" />
+		<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<meta property="og:image" content="img/preview.png">
+		<meta name="twitter:card" content="summary_large_image">
+
+
+		<link rel="stylesheet" href="https://use.typekit.net/dwk3dpn.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo7.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-		
+
 	</head>
 	<body>
 		<main>
@@ -26,21 +47,9 @@
 				</symbol>
 			</svg>
 			<div class="frame">
-				<h1 class="frame__title">Audio-based Image Distortion</h1>
-				<div class="frame__links">
-					<a href="http://tympanus.net/Tutorials/3DClothSlideshow/">Previous Demo</a>
-					<a href="https://tympanus.net/codrops/?p=47614">Article</a>
-					<a href="https://github.com/neundex/AudioBasedImageDistortion">GitHub</a>
-				</div>
+				<img src="img/logo-full.svg" style="height:30px"></img>
+
 				<div class="frame__demos">
-					<a href="index.html" class="frame__demo frame__demo--current">1</a>
-					<a href="index2.html" class="frame__demo">2</a>
-					<a href="index3.html" class="frame__demo">3</a>
-					<a href="index4.html" class="frame__demo">4</a>
-					<a href="index5.html" class="frame__demo">5</a>
-					<a href="index6.html" class="frame__demo">6</a>
-					<a href="index7.html" class="frame__demo">7</a>
-					<a href="index8.html" class="frame__demo">8</a>
 				</div>
 				<button class="toggle toggle--on button" id="toggle-btn">
 					<svg class="toggle__icon toggle__icon--on"><use xlink:href="#icon-soundon"></use></svg>
@@ -48,25 +57,34 @@
 				</button>
 			</div>
 			<div class="content">
-				<h3 class="content__subtitle">An Onum Barr film</h3>
-				<h2 class="content__title">Substrate</h2>
-				<div class="content__credits">Mechanic Sky Enterprises <small>presents a</small> Mechanic Sky <small>production in association with</small> Humanae Future <small>an</small> Onum Barr <small>Film</small> Susan Calvin Arkady Darell Lors Avakim Raych Seldon "Substrate" <small>music by</small> Danny Greehouse <small>costume designer</small> Laura Kenister <small>visual effects supervisor</small> Frederick Mounte <small>editors</small> Onum Barr Mark Singer <small>production designer</small> Andy Nichols <small>director of photography</small> Carol P. Wyonast <small>written by</small> Onum Barr <small>produced by</small> Onum Barr David Loyman <small>directed by</small> Onum Barr
-				<br /><br /><a href="http://bit.ly/CodropsDiviDemo" rel="sponsored">Sponsored by Divi</a>
-       			</div>
+				<h3 class="content__subtitle">Welcome to</h3>
+				<h2 class="content__title">Satellite</h2>
+				<a href="https://satellite-alpha.typeform.com/to/Z5KWMO" target="_blank"><button class="button button--box">JOIN THE WAITLIST</button></a>
+
+				<div class="content__credits">
+					Zero Advertising <br/>
+					Publicly Owned Data-sets <br/>
+					Community Curated Feeds <br/>
+					Decentralized Torrent Media <br/>
+					Virtual Democratic States<br/>
+					View User Connections in 3D Space <br/>
+				</div>
+
 			</div>
 			<div class="screen screen--grid intro">
 				<p class="intro__content">
-					<span class="intro__content-line">Mechanic Sky</span>
-					<span class="intro__content-line intro__content-line--small">presents</span>
+					<span class="intro__content-line intro__content-line--small">Centralized social media platforms allow corporations </span>
+					<span class="intro__content-line intro__content-line--small">to control and commoditize our interactions with one another.</span>
 				</p>
 				<p class="intro__content">
-					<span class="intro__content-line intro__content-line--small">in association with</span>
-					<span class="intro__content-line">Humanae Future</span>
+					<span class="intro__content-line intro__content-line--small">Social media doesn't have to be privatized.</span>
+					<span class="intro__content-line intro__content-line--small">It's possible to create networks that cannot be owned by anyone to serve the common good.</span>
 				</p>
+
 			</div>
 			<div class="screen screen--flex action">
 				<span class="action__line">Turn your sound on</span>
-				<button id="play-btn" class="button button--box">Play</button>
+				<button id="play-btn" class="button button--box">ENTER</button></a>
 			</div>
 		</main>
 		<div id="p5_loading" class="p5_loading">
@@ -75,6 +93,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
-		<script src="js/demo1.js"></script>
+		<script src="js/demo4.js"></script>
 	</body>
 </html>
