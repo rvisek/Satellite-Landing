@@ -15,7 +15,7 @@ body {
 	--color-link: #aaa;
 	--color-link-hover: #fff;
 	--anim-time: 7.5s;
-	--anim-delay-first: 1s;
+	--anim-delay-first: 1.5s;
 	--anim-delay-second: calc(var(--anim-delay-first) + var(--anim-time));
 	--anim-time-total: calc(var(--anim-time) + var(--anim-delay-first)/3 + var(--anim-delay-second));
 	--color-title: #fff;
@@ -255,11 +255,11 @@ a:focus {
 }
 
 .intro__content {
-	font-size: 4vw;
+	font-size: 3.5vw;
 	grid-area: 1 / 1 / 2 / 2;
 	text-align: center;
 	pointer-events: none;
-	margin: 0;
+	margin: 1vw;
 	opacity: 0;
 }
 
