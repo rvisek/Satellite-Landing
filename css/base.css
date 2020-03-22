@@ -138,17 +138,17 @@ a:focus {
 /*	font-size: 1rem;*/
 /*}*/
 
-.button:hover,
-.button:focus {
-	outline: none;
-	color: var(--color-link-hover);
-}
+/*.button:hover,*/
+/*.button:focus {*/
+/*	outline: none;*/
+/*	color: var(--color-link-hover);*/
+/*}*/
 
-.button--box:hover,
-.button--box:focus {
-	background: var(--color-link);
-	color: var(--color-bg);
-}
+/*.button--box:hover,*/
+/*.button--box:focus {*/
+/*	background: var(--color-link);*/
+/*	color: var(--color-bg);*/
+/*}*/
 
 .toggle__icon {
 	position: relative;
