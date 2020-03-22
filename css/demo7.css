@@ -40,9 +40,8 @@ body {
 }
 
 section {
-    background-color: teal;
     color: white;
-    font-family: helvetica;
+    font-family: JetBrainsMono-Regular;
     text-transform: uppercase;
     overflow-x: hidden;
 }
@@ -57,7 +56,7 @@ section div .news-message {
     flex-shrink: 0;
     height: 50px;
     align-items: center;
-    animation: slide-left 20s linear infinite;
+    animation: slide-left 25s linear infinite;
 }
 section div .news-message p {
     font-size: 2.5em;
